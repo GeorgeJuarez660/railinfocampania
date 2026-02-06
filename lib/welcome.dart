@@ -9,7 +9,7 @@ class Benvenuto extends StatelessWidget{
 
     number = 200;
 
-    return Scaffold(
+    return Scaffold( //inizio stile app
       appBar: AppBar( //testa
         title: const Center( //inserisco il contenitore
             child: Image( //all'interno metto l'immagine
@@ -20,9 +20,9 @@ class Benvenuto extends StatelessWidget{
         toolbarHeight: 120, //altezza della testa
         backgroundColor: Colors.transparent, //colore della testa
       ),
-      body: const ColoredBox(//a differenza di java, si mette prima il layout ColoredBox per la posizione e poi il contenitore
+      body: const ColoredBox(//nel corpo, a differenza di java, si mette prima il layout ColoredBox per il colore e poi il layout posizione
           color: Colors.lightBlue,
-          child: const Align( //a differenza di java, si mette prima il layout Align per la posizione e poi il contenitore
+          child: const Align( //sempre a differenza di java, si mette prima il layout Align per la posizione e poi il contenitore
             alignment: Alignment.center,
             child: Column( //inserisco il contenitore colonna nel corpo
               mainAxisSize: MainAxisSize.min, //occupa il minimo indispensabile in base ai contenuti

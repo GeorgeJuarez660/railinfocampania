@@ -11,9 +11,9 @@ class RICampaniaApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      home: const Benvenuto(),
+    return MaterialApp( //tipo app
+      title: 'RailInfo Campania', //titolo app
+      home: const Benvenuto(), //classe di partenza
     );
   }
 }
