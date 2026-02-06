@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:railinfocampania/page.dart';
+import 'package:railinfocampania/welcome.dart';
 
 void main() {
   runApp(const RICampaniaApp());
@@ -13,7 +13,7 @@ class RICampaniaApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: const Prova(),
+      home: const Benvenuto(),
     );
   }
 }
