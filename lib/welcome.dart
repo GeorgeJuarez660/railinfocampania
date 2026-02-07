@@ -20,14 +20,23 @@ class Benvenuto extends StatelessWidget{
         toolbarHeight: 120, //altezza della testa
         backgroundColor: Colors.transparent, //colore della testa
       ),
-      body: const ColoredBox(//nel corpo, a differenza di java, si mette prima il layout ColoredBox per il colore e poi il layout posizione
+      body: ColoredBox(//nel corpo, a differenza di java, si mette prima il layout ColoredBox per il colore e poi il layout posizione
           color: Colors.lightBlue,
-          child: const Align( //sempre a differenza di java, si mette prima il layout Align per la posizione e poi il contenitore
-            alignment: Alignment.center,
+          child: Align( //sempre a differenza di java, si mette prima il layout Align per la posizione e poi il contenitore
+            alignment: Alignment.center, //allineo al centro
             child: Column( //inserisco il contenitore colonna nel corpo
               mainAxisSize: MainAxisSize.min, //occupa il minimo indispensabile in base ai contenuti
+              spacing: 200, //inserisci lo spazio tra figli
               children: <Widget>[ //i figli
-                Text("Benvenuto", style: TextStyle(fontSize: 20)),
+                const Text("Benvenuto", style: TextStyle(fontSize: 62, color: Colors.white, fontFamily: 'ZenMaruGothic', fontWeight: FontWeight.w700)),
+                ElevatedButton( //inserisco il pulsante
+                    onPressed: () {}, //dove metto il testo come figlio
+                    style: ElevatedButton.styleFrom( //qui lo stilizzo
+                      backgroundColor: Color(0xFF0495CD),
+                      padding: EdgeInsets.symmetric(horizontal: 310, vertical: 17)
+                    ), //metto il figlio
+                    child: const Text("ENTRA", style: TextStyle(fontSize: 20, color: Colors.white, fontFamily: 'ZenMaruGothic', fontWeight: FontWeight.w500)),
+                ),
               ],
             ),
           )
