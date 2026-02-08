@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:railinfocampania/welcome.dart';
+import 'package:railinfocampania/goodbye.dart';
 
 void main() {
   runApp(const RICampaniaApp());

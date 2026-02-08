@@ -58,6 +58,8 @@ flutter:
   uses-material-design: true
   assets:
     - 'assets/images/logo.png'
+    - 'assets/images/info.png'
+    - 'assets/images/world.gif'
   fonts:
     - family: 'ZenMaruGothic'
       fonts:
