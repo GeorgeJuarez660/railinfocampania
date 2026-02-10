@@ -60,6 +60,7 @@ flutter:
     - 'assets/images/logo.png'
     - 'assets/images/info.png'
     - 'assets/images/world.gif'
+    - 'assets/images/backSym.png'
   fonts:
     - family: 'ZenMaruGothic'
       fonts:
